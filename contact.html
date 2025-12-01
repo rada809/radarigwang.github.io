@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact form and professional links for direct communication, inquiries, and collaboration opportunities.">
+    <title>Contact Me - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="main-nav" aria-label="Primary Navigation">
+        <div class="nav-logo">My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="sculpture.html">Sculpture</a></li>
+            <li><a href="courses.html">Online Courses</a></li>
+            <li><a href="contact.html" class="active-link">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="page-content contact-page">
+        <h1 class="page-title">Get In **Touch**</h1>
+        <p class="section-intro">I'm always open to discussing new projects, collaboration opportunities, or general inquiries. Feel free to reach out using the form below or connect with me professionally.</p>
+        
+        <div class="contact-layout-grid">
+
+            <article class="content-card contact-form-container">
+                <h2>Send a Message</h2>
+                
+                <form action="[YOUR_FORM_SUBMISSION_ENDPOINT]" method="POST" class="contact-form">
+                    
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" id="name" name="user_name" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" name="user_email" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject:</label>
+                        <input type="text" id="subject" name="message_subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message:</label>
+                        <textarea id="message" name="message_body" rows="6" required aria-required="true"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Send Inquiry</button>
+                    
+                    <input type="hidden" name="_honeypot" value="">
+                </form>
+            </article>
+
+            <aside class="content-card contact-info-container">
+                <h2>Connect Professionally</h2>
+
+                <div class="contact-details">
+                    <p class="detail-item">
+                        <strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    </p>
+                    <p class="detail-item">
+                        <strong>Phone:</strong> (555) 123-4567
+                    </p>
+                    <p class="detail-item">
+                        <strong>Location:</strong> [Your City/Region]
+                    </p>
+                </div>
+
+                <div class="social-links">
+                    <h3>My Professional Channels</h3>
+                    <ul class="icon-list">
+                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn Profile" class="social-icon linkedin">LinkedIn</a></li>
+                        <li><a href="https://github.com/yourusername" target="_blank" aria-label="GitHub Repositories" class="social-icon github">GitHub</a></li>
+                        <li><a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter Handle" class="social-icon twitter">Twitter/X</a></li>
+                        <li><a href="https://instagram.com/yourart" target="_blank" aria-label="Instagram Art Gallery" class="social-icon instagram">Instagram (Sculpture)</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2025 My Portfolio. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
